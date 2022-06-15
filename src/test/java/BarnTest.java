@@ -50,20 +50,4 @@ public class BarnTest {
         barn.anotherWeekPassed(WeekState.BAD);
         assertFalse(barn.getBirds().contains(deadBird));
     }
-
-//    @Test
-//    public void testGetState() {
-//    }
-
-//    @Test
-//    public void testGetBirds() {
-//    }
-//
-//    @Test
-//    public void testSetBirds() {
-//    }
-//
-//    @Test
-//    public void testGetBirdCount() {
-//    }
 }
