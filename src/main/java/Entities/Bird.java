@@ -46,4 +46,8 @@ public  int getWeeksLived() {
     public static void setSerialNumber(int serialNumber) {
         Bird.serialNumber = serialNumber;
     }
+
+    public static int getSerialNumber() {
+        return serialNumber;
+    }
 }

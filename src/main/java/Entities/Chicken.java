@@ -1,7 +1,7 @@
 package Entities;
 
 public class Chicken extends Bird {
-    private final int LIFE_SPAN = 6;
+    private int LIFE_SPAN = 6;
 
     public Chicken(String name) {
         super();
@@ -34,5 +34,9 @@ public class Chicken extends Bird {
     @Override
     public String getType() {
         return "Chicken";
+    }
+
+    public int getLIFE_SPAN() {
+        return LIFE_SPAN;
     }
 }
