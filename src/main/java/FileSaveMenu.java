@@ -26,7 +26,7 @@ public class FileSaveMenu {
             try {
                 BirdWriter writer = BirdWriterFactory.getWriter(output, barn.getBirds());
                 if (writer.write()) {
-                    return "File saved successfully in  : " + output.getAbsolutePath();
+                    return "File saved successfully in : " + output.getAbsolutePath();
                 } else {
                     return "There was a problem saving file at: " + output.getAbsolutePath();
                 }
@@ -34,7 +34,6 @@ public class FileSaveMenu {
                 return e.getMessage();
             }
         }
-        return "There's an error in FileSaveMenu";
-
+        return null;
     }
 }

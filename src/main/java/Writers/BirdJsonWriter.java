@@ -3,7 +3,6 @@ package Writers;
 import Entities.Bird;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,13 +18,13 @@ public class BirdJsonWriter implements BirdWriter {
     }
 
     @Override
-   public boolean write() {
+    public boolean write() {
         try {
             if (!file.isFile()) {
                 file.createNewFile();
             }
             FileWriter writer = new FileWriter(file);
-            GsonBuilder gsonBuilder  = new GsonBuilder();
+            GsonBuilder gsonBuilder = new GsonBuilder();
             gsonBuilder.excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT);
             Gson gson = gsonBuilder.create();
             gson.toJson(birds, writer);
@@ -34,5 +33,5 @@ public class BirdJsonWriter implements BirdWriter {
         } catch (IOException e) {
             return false;
         }
-   }
+    }
 }

@@ -1,7 +1,6 @@
 package Readers;
 
 import Exeptions.FileNotRecognizedException;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -13,9 +12,9 @@ public class BirdReaderFactory {
         String[] path = file.getPath().split("\\.");
         String type = path[path.length - 1];
         switch (type) {
-            case "json" :
+            case "json":
                 return new BirdJsonReader();
-            case "txt" :
+            case "txt":
                 return new BirdTextReader();
             default:
                 throw new FileNotRecognizedException("Extension not recognized: " + type);

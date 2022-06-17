@@ -1,6 +1,5 @@
 package inputFileGenerators;
 
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
@@ -18,6 +17,7 @@ public class BarnFileTxtGenerator {
                 sb.append(System.lineSeparator());
             }
         }
+
         FileWriter out = new FileWriter("src\\main\\resources\\savedBirds.txt");
         out.write(sb.toString());
         out.close();

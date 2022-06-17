@@ -8,6 +8,7 @@ import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -25,7 +26,7 @@ public class BirdJsonReader implements BirdReader {
         Gson gson = gsonBuilder.create();
         Set<Bird> toReturn = new TreeSet<>();
 
-        Set birds = gson.fromJson(reader, TreeSet.class);
+        Set birds = gson.fromJson(reader, HashSet.class);
 
         //TODO find a better way to do this
         for (Object bird : birds) {

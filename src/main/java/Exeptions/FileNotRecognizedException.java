@@ -1,6 +1,6 @@
 package Exeptions;
 
-public class FileNotRecognizedException extends Exception{
+public class FileNotRecognizedException extends Exception {
 
     public FileNotRecognizedException() {
     }
