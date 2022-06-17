@@ -22,7 +22,7 @@ public class BirdReaderFactoryTest {
 
     @Test(expectedExceptions = FileNotFoundException.class)
     public void testGetReaderShouldThrowWhenFIleNotFound() throws FileNotRecognizedException, FileNotFoundException {
-       BirdReaderFactory.getReader(new File("unexistent"));
+       BirdReaderFactory.getReader(new File("existent"));
     }
 
     @Test(expectedExceptions = FileNotRecognizedException.class)

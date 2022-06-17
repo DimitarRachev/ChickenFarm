@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class BarnFileJsonGenerator {
 
-    //Used for initial generation of the needed files
+    //Used for initial generation of the needed Json
     public static void main(String[] args) throws IOException {
       Set<Bird> set = new HashSet<>();
         Random random = new Random();

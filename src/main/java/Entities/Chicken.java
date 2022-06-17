@@ -17,7 +17,6 @@ public class Chicken extends Bird {
     public Bird getNextStateOfExistence() {
         return null;
     }
-
     @Override
     public Egg[] getEggs(WeekState weekState) {
         if (weeksLived >= 2 && weeksLived <= 4) {

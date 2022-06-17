@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class BarnFileTxtGenerator {
 
-    //Used for initial generation of the needed files
+    //Used for initial generation of the needed .txt file
     public static void main(String[] args) throws IOException {
         Random random = new Random();
         StringBuilder sb = new StringBuilder();

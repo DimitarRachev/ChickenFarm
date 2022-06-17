@@ -7,7 +7,7 @@ public class Barn {
     private Set<Bird> birds;
 
     public Barn() {
-        birds = new HashSet<>();
+        birds = new TreeSet<>();
     }
 
     public boolean addBird(Bird bird) {
